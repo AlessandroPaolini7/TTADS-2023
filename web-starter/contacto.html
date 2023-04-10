@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Desarrollo de Software</title>
+</head>
+<!-- En la sección Contacto: 
+ - Cuando se cargan correctamente todos los datos, mostrar el mensaje: ***"Mensaje enviado correctamente!"*** en color verde.
+ - Agregar un campo para que el usuario pueda ingresar un teléfono de contacto. Si el mensaje se envía correctamente, mostrar el teléfono junto con el resto de los datos. -->
+<body>
+    <div id="container" class="container">
+        <div class="container-left">
+            <div class="menu">
+                <a class="menu-item" href="/">Home</a>
+                <a class="menu-item" href="bio.html">Bio</a>
+                <a class="menu-item" href="contacto.html">Contacto</a>
+                <a class="menu-item" href="mrx.html">Mr. X</a>
+            </div>
+        </div>
+        <div class="container-right">
+            <h2>Contactate con nosotros y te responderemos a la brevedad</h2>
+
+            <form>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+                <button class="form-button" type="submit" id="submit">Enviar</button>
+                <span class="error" id="error">Debe ingresar todos los campos obligatorios</span>
+                <span class="success" id="success">Mensaje enviado correctamente!</span>
+            </form>
+
+            <div class="user-message-container">
+                <p id="user-name"></p>
+                <p id="user-email"></p>
+                <p id="user-message"></p>
+                <p id="user-phone"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
