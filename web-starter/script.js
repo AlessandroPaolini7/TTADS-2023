@@ -1,7 +1,4 @@
-console.log('Hola Mundo');
-//  En la sección Contacto: 
-//  - Cuando se cargan correctamente todos los datos, mostrar el mensaje: ***"Mensaje enviado correctamente!"*** en color verde.
-//  - Agregar un campo para que el usuario pueda ingresar un teléfono de contacto. Si el mensaje se envía correctamente, mostrar el teléfono junto con el resto de los datos.
+// console.log('Hola Mundo');
 window.addEventListener('load', () => {
     const submitButton = document.querySelector('#submit');
     submitButton?.addEventListener('click', (event) => {
@@ -10,7 +7,7 @@ window.addEventListener('load', () => {
         const email = document.querySelector('#email').value;
         const message = document.querySelector('#message').value;
         const phone = document.querySelector('#phone').value;
-        if (name !== '' && email !== '' && message !== '') {
+        if (name !== '' && email !== '' && message !== '' && phone !== '') {
             // ok
             document.querySelector('#user-name').innerHTML = name;
             document.querySelector('#user-email').innerHTML = email;
@@ -26,6 +23,11 @@ window.addEventListener('load', () => {
     document.querySelector('#get-user')?.addEventListener('click', getUser);
 });
 
+// En la sección donde obtenemos un usuario desde una api externa:
+//  - En el caso de darse un error (por ej por desconexión de internet),
+// manejar el error y mostrar un mensaje al usuario: "No se ha podido recuperar el usuario. Por favor inténtelo más tarde."
+//  - En el caso de que la request se ejecute correctamente, además de mostrar el nombre del usuario, agregar una etiqueta img y mostrar la imagen del usuario obtenido como respuesta de la api
+
 function getUser() {
     fetch('https://randomuser.me/api/')
         .then((data) => {
@@ -35,5 +37,7 @@ function getUser() {
             const userData = response.results[0].name;
             document.querySelector('#user-name').innerHTML = `${userData.title}. ${userData.first} ${userData.last}`;
         })
-        .catch((error) => console.log('aja', error));
+        .catch((error) => {
+            document.querySelector('#error-fetch').classList.add('show-error');
+        });
 }

@@ -84,6 +84,10 @@ h2 {
     display: none;
 }
 
+.show-success {
+    display: block;
+}
+
 /* User */
 .user-img {
     display: block;
