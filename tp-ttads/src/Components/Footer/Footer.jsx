@@ -3,7 +3,9 @@ import { FooterContainer } from './styles.js'
 const Footer = () => {
     return (
         <FooterContainer>
-            Footer
+            {/* <FooterLeft>left</FooterLeft>
+            <FooterCenter>center</FooterCenter>
+            <FooterRight>right</FooterRight> */}
         </FooterContainer>
     )
     }
