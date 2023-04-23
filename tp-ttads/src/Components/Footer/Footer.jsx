@@ -18,7 +18,6 @@ const Footer = () => {
                     <h4>Trouble</h4>
                     <p>Coldplay</p>
                 </div>
-                {/* La puta madre no puedo hacer que estas dos palabras queden más cerca */}
             </FooterLeft>
             <FooterCenter>
                 <ShuffleIcon/>

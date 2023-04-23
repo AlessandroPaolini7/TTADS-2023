@@ -17,11 +17,21 @@ const FooterLeft = styled.div`
     display: flex;
     align-items: center;
     max-width: 300px;
+    & h4 {
+        margin-bottom: auto;
+        font-size: 18px;
+        margin-top: -1px;
+    }
+    & p {  
+        font-size: 12px;
+        margin-top: auto;
+    }
     & img{ 
         height: 60px;
         width: 60px;
         margin-right: 20px;
         object-fit: contain;
+        margin-left: 8px;
     }
 `;
 
