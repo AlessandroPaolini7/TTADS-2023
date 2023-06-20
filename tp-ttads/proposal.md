@@ -59,3 +59,25 @@ Historial: date fecha_reproduccion
 |CRUD |1. CRUD Usuario<br>2. CRUD Playlist<br>3. CRUD Suscripcion<br>4. CRUD Cancion<br>5. CRUD Artista<br>6. CRUD Album<br>|
 |CUU|1. Crear una nueva playlist<br>2. Realizar la busqueda de una canción para escuchar<br>3. Agregar una canción a playlist existente<br>4. Suscribirse al servicio<br>5. Realizar la mejora de suscripción<br>6. Crear una cuenta de usuario<br>7. Realizar busqueda de canciones por género<br>8. Descargar una lista de reproducción para escuchar sin conexión|
 
+--
+
+### Regularidad:
+|Req|Detalle|
+|:-|:-|
+|CRUD simple|1. CRUD Usuario<br>2. CRUD Playlist<br>3. CRUD Suscripcion<br>4. CRUD Cancion<br>5. CRUD Artista<br>6. CRUD Album<br>|
+|CRUD dependiente|  |
+|Listado<br>+<br>detalle| 1. Listado de Canciones filtradas por título, género y artista => detalle completo de la canción<br> 2. Listado de playlists filtradas por aquellas creadas por el ususario => detalle completo de la playlist + detalle canciones|
+|CUU/Epic|1. Crear una nueva playlist<br>2. Agregar una canción a playlist existente|
+
+### Aprobación:
+|Req|Detalle|
+|:-|:-|
+|CRUD |1. CRUD Usuario<br>2. CRUD Playlist<br>3. CRUD Suscripcion<br>4. CRUD Cancion<br>5. CRUD Artista<br>6. CRUD Album<br>7. CRUD Historial<br>8. CRUD Recomendacion|
+|CUU/Epic|1. Suscribirse al servicio<br>2. Descargar una lista de reproducción para escuchar sin conexión<br>3. Realizar la mejora de suscripción (no sería suscribirse a un servicio?)|
+
+### Alcance Adicional Voluntario:
+|Req|Detalle|
+|:-|:-|
+|Listados | Listado de la cola de reproducción determinada por el usuario |
+|CUU/Epic|1. Agregar canción a cola de reproducción<br> 2. Cancelar suscripción|
+|Otros|1. Envío de notifiaciones (mail) para ..|
