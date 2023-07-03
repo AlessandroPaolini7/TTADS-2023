@@ -20,7 +20,7 @@ El negocio de esta aplicación de streaming de música se centra en ofrecer a lo
 classDiagram
 Usuario "1" -- "*" Playlist: 
 Playlist *-- Cancion
-Cancion "1..*" -- "1..*" Artista
+Cancion "0..*" -- "1..*" Artista
 Artista "1" --  "0..*" Album
 Album *-- Cancion 
 Usuario "1" -- "0..*" Suscripcion
