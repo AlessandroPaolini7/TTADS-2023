@@ -16,6 +16,10 @@ const Sidebar = () => {
             <hr />
             <SidebarChoice title="Roadtrip"/>
             <SidebarChoice title="Previa - POLACO GDC"/>
+            <SidebarChoice title="Top 50 - Argentina"/>
+            <SidebarChoice title="Top 50 - Global"/>
+
+
         </SidebarContainer>
     )
 }

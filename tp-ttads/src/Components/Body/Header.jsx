@@ -11,7 +11,7 @@ const Header = () => {
         </HeaderLeft>
         <HeaderRight>
             <Avatar/>
-            <h4>Username</h4>
+            <h4 style={{color:'white'}}>Username</h4>
         </HeaderRight>
     </HeaderContainer>
 

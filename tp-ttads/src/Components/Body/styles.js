@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const BodyContainer = styled.div`
     flex: 0.8;
+    background-color: #232323;
     `
 
 
@@ -36,4 +37,13 @@ const HeaderRight = styled.div`
         margin-right: 15px;
     }`;
 
-export { BodyContainer, HeaderContainer, HeaderLeft, HeaderRight };
+const gradientStyle = {
+    backgroundImage: `linear-gradient(to right, black, #232323)`,
+  };
+
+const cardStyle = {
+    backgroundColor: '#181818'
+}
+
+
+export { cardStyle,gradientStyle, BodyContainer, HeaderContainer, HeaderLeft, HeaderRight };
