@@ -10,7 +10,7 @@ background-color:#000;
 }
 `
 
-const LoginButton = styled.button`
+const LoginButton = styled.a`
 padding:20px;
 background-color:#1db954;
 border-radius:90px;
