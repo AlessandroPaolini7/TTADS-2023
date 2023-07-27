@@ -6,10 +6,19 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import {FormLoginContainer, FormLogin, NavLogin, LoginButton, UsernameInput} from './styles.js';
+import {FormLoginContainer, FormLogin, NavLogin, LoginButton, LoginInput} from './styles.js';
 import styled from 'styled-components/macro';
+import { Navigate } from "react-router-dom";
+
 
 export default function InputWithIcon() {
+
+  const [goToPlayer, setGoToPlayer] = React.useState(false);
+
+    if (goToPlayer) {
+        return <Navigate to="/player" />;
+    }
+
   return (
     <FormLoginContainer>
       <NavLogin>
@@ -18,10 +27,14 @@ export default function InputWithIcon() {
       <FormLogin>
         <h1 css={`margin: 60px; font-size:50px;`}>Log in to Spotify</h1>
         <span>Email or username</span>
-        <UsernameInput id="login-username" type="text" placeholder="Email or username"  />
+        <LoginInput id="login-username" type="text" placeholder="Email or username" startAdornment={
+            <InputAdornment position="start">
+              <AccountCircle />
+            </InputAdornment>}
+        />
         <span>Password</span>
-        <UsernameInput id="login-password" type="password" placeholder="Password"  />
-        <LoginButton>
+        <LoginInput id="login-password" type="password" placeholder="Password"  />
+        <LoginButton onClick={() => {setGoToPlayer(true);}}>
           Entrar
         </LoginButton>
       </FormLogin>

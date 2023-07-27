@@ -1,7 +1,7 @@
 import './App.css';
-import Login from './Components/Login/Login';
-import FormLogin from './Components/FormLogin/FormLogin';
-import Player from './Components/Player/Player';
+import Login from './styled-components/Login/Login';
+import FormLogin from './styled-components/FormLogin/FormLogin';
+import Player from './styled-components/Player/Player';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/formlogin" element={<FormLogin />} />
+        <Route path="/player" element={<Player />} />
       </Routes>
     </Router>
   </div>

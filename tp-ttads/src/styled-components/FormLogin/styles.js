@@ -39,7 +39,7 @@ width: 100%;
 }
 `
 
-const UsernameInput = styled.input`
+const LoginInput = styled.input`
 appearance: none;
 background-image: none;
 border: 0px;
@@ -61,6 +61,11 @@ background-color: var(--background-base,#000);
 box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
 color: white;
 width: 40%;
+
+&:hover{
+    outline: white solid;
+}
+
 `
 
 
@@ -81,4 +86,4 @@ font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,Circul
 
 
 
-export {FormLoginContainer, FormLogin, NavLogin, LoginButton, UsernameInput};
+export {FormLoginContainer, FormLogin, NavLogin, LoginButton, LoginInput};
