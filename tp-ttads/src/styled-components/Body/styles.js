@@ -30,7 +30,7 @@ padding-inline: 14px;
 padding-block-start: var(--spacer--2,8px);
 padding-block-end: var(--spacer--2,8px);
 min-block-size: var(--control-size-md,48px);
-background-color: var(--background-base,#000);
+background-color: #121212;
 box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
 color: white;
 width: 40%;
@@ -38,8 +38,6 @@ display: flex;
 align-items: center;
 flex:0.5;
 min-width: 75px;
-background-color: #000;
-color:#181818;
 border-radius: 30px;
 padding:10px;
 
@@ -56,7 +54,7 @@ padding:10px;
 `;
 
 const SearchInput = styled.input`
-background-color: #000;
+background-color: #121212;
 font-size: 1rem;
 font-weight: 400;
 font-family: var(--font-family,CircularSp,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));

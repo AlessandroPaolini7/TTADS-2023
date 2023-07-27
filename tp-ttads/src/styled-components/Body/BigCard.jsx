@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import { gradientStyle } from './styles';
 
-export default function MediaControlCard() {
+export default function BigCard() {
 
     const playlistData = {
         title: 'Nombre de la Playlist que quieran prom.',
