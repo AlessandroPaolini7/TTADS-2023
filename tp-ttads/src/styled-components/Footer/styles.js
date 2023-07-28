@@ -4,7 +4,7 @@ const FooterContainer = styled.div`
     position:fixed;
     bottom:0;
     width:100%;
-    height:70px;
+    height:10%;
     background-color:#181818;
     color:#fff;
     display: flex;

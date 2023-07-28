@@ -4,8 +4,6 @@ const BodyContainer = styled.div`
     flex: 0.8;
     background-color: #232323;
     `
-
-
 const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;

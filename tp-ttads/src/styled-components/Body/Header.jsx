@@ -2,7 +2,16 @@ import React from 'react'
 import { HeaderContainer, HeaderLeft, HeaderRight, SearchInput } from './styles.js'
 import SearchIcon from '@mui/icons-material/Search';
 import { Avatar } from '@mui/material';
+import { Navigate } from "react-router-dom";
+
 const Header = () => {
+
+    const [goToAccount, setGoToAccount] = React.useState(false);
+
+    if (goToAccount) {
+        return <Navigate to="/account" />;
+    }
+
     return (
     <HeaderContainer>
         <HeaderLeft>
@@ -11,7 +20,7 @@ const Header = () => {
         </HeaderLeft>
         <HeaderRight>
             <Avatar/>
-            <h4 style={{color:'white'}}>Username</h4>
+            <h4 style={{color:'white'}} onClick={() => {setGoToAccount(true);}}>Username</h4>
         </HeaderRight>
     </HeaderContainer>
 

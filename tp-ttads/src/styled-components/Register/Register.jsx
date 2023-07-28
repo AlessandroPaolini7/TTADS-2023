@@ -7,6 +7,7 @@ import { Navigate } from "react-router-dom";
 import {StyledRadio, StyledSelect, DateInput} from './styles';
 import MenuItem from '@mui/material/MenuItem';
 import FormHelperText from '@mui/material/FormHelperText';
+import { Radio } from '@mui/material';
 
 
 export default function Register() {
@@ -19,9 +20,9 @@ export default function Register() {
     setMonth(event.target.value);
   };
 
-    if (goToPlayer) {
-        return <Navigate to="/player" />;
-    }
+  if (goToPlayer) {
+      return <Navigate to="/player" />;
+  }
 
   return (
     <FormLoginContainer>
@@ -46,8 +47,8 @@ export default function Register() {
                 defaultValue="female"
                 name="radio-buttons-group"
             >
-                <FormControlLabel value="female" control={<StyledRadio />} label="Female" />
-                <FormControlLabel value="male" control={<StyledRadio />} label="Male" />
+                <FormControlLabel value="female" control={<Radio color='primary' />} label="Female" />
+                <FormControlLabel value="male" control={<Radio color='primary' />} label="Male" />
             </RadioGroup>
         </FormControl>
         <span>What’s your date of birth?</span>
